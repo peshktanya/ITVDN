@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+
+    <p>Click the button to wait 3 seconds, then message is shown.</p>
+
+    <button onclick="myFunction()">Show Message</button>
+    <p id="here"></p>
+
+    <script>
+        var myVar;
+
+
+        function myFunction() {
+            myVar = setTimeout(showMsg, 3000);
+        }
+
+        function showMsg() {
+            document.getElementById("here").innerHTML = "Hello! I'm here";
+        }
+    </script>
+
+</body>
+</html>
